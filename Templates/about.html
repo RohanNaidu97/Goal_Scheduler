@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+
+<div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p style="font-size: 20px">Goals scheduler is a web-based application that you helps set your daily mess in order. Firstly it keeps a list of things you need to do, it takes up your daily schedule, it remembers the books you need to read, and it also mark your monthly goals. 
+      This is a tool you need to maximize your work efficiency by keeping in check of the tasks you need to do. Once you have game plan you can execute it without constantly trying to remember what to do next after every hour, instead you can use that energy to actually do things.
+
+    </p>
+  </div>
+  
+<!--<h2>Here are the list of things you should do</h2>
+<h1> About :</h1>
+
+<p>{{developed_on}}</p>
+<p>{{developed_by}}</p>
+
+<ul>
+	{% for item in my_list %}
+	<li>{{ forloop.counter }} - {{ item }}</li>
+	{% endfor %}
+</ul>
+{% endblock %}
+<br>
+
+<div class="w3-bar-block w3-teal" style="width:60%">
+  {% for instance in object_list %}
+	<p style="font-size: 20px">{{ forloop.counter }}<a href = "{{ instance.get_absolute_url }}" class="w3-bar-item w3-hover-green">{{ instance.Todo }}</a></p>
+	{% endfor %}
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="w3-panel" style="width:30%">
+  <button class="w3-button w3-block w3-black"><a href="create/"> Add another job </a></button>
+</div>
+-->

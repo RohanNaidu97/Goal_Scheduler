@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+
+{% block content %}
+<h1>So what do you want to do today?</h1>
+<h2>Monthly goals<a href="{% url 'Monthlygoals' %}"></a></h2>
+<h2>Schedule<a href="{% url 'Schedule' %}"></a></h2>
+<h2>To-do list</h2> 
+<h2>Books to read<a href="{% url 'books' %}"></a></h2>
+
+{% endblock %}

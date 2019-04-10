@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<title>Welcome to the Goals scheduler</title>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+<!-- Navbar (sit on top) -->
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="{% static 'images/4675141-Brian-Tracy-Quote-A-goal-without-a-plan-is-only-a-dream.jpg' %}" alt="Architecture" width="1500" height="800">
+  <!--<div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-dark-blue"><span class="w3-padding w3-black w3-opacity-min"><b></b></span> <span class="w3-hide-small w3-text-light-grey"> you can write something here if you want rohan</span></h1>
+  </div>-->
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section 
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
+    </div> -->
+  </div>
+ 
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p style="font-size: 20px">Goals scheduler is a web-based application that you helps set your daily mess in order. Firstly it keeps a list of things you need to do, it takes up your daily schedule, it remembers the books you need to read, and it also mark your monthly goals. 
+      This is a tool you need to maximize your work efficiency by keeping in check of the tasks you need to do. Once you have game plan you can execute it without constantly trying to remember what to do next after every hour, instead you can use that energy to actually do things.
+
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{%static 'images/download.png' %}" alt="John" style="width:100%">
+      <h3>Scheduler</h3>
+      <p class="w3-opacity"></p>
+      <p style="font-size: 20px">Every journey needs a map and for every battle you need a plan. Building a schedule helps you to keep an optimum work life.</p>
+      <a href="/Schedule/" class="btn btn-primary">Let's Plan</a>
+    </div>
+
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{%static 'images/downloadssssss.png' %}" alt="Jane" style="width:100%">
+      <h3>To-do List</h3>
+      <p class="w3-opacity"></p>
+      <p style="font-size: 20px">After every plan you still need to take care of the commmon chores of everyday life, to keep the balance in life you need keep moving.</p>
+      <a href="/Dolist" class="btn btn-primary">Create The To-do List</a>
+    </div>
+
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{%static 'images/f00449fa4db0422364c298516b223acd.png' %}" alt="Mike" style="width:100%">
+      <h3>Books To Read</h3>
+      <p class="w3-opacity"></p>
+      <p style="font-size: 20px">An average human reads 1.5 books per year but a millionaire reads 52 books per year, follow the people you want to be.</p>
+      <a href="/books" class="btn btn-primary">Create The List</a>
+    </div>
+    
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{%static 'images/gg-540Icon-8v2.png' %}" alt="Dan" style="width:100%">
+      <h3>Monthly Goals</h3>
+      <p class="w3-opacity"></p>
+      <p style="font-size: 20px">Set your goals to keep reminding youself of the dream you are going to achieve.</p>
+      <a href="/Monthlygoals/" class="btn btn-primary">Let's Achieve More</a>
+    </div>
+  </div>
+
+  <!-- Contact Section 
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  -->
+
+
+<!-- Image of location/map 
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+-->
+
+
+<!-- End page content
+</div>-->
+
+
+
+<!-- Footer 
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Dream Big, Build Strong</p>
+  <br><br/>
+    <center><small>Copyright &copy; GoalScheduler.org - All Rights reserved</small></center>
+</footer>
+-->
+{% endblock %}
+</body>

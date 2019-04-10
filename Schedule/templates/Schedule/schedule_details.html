@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>KEEP GOING </h1>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+    <p style="font-size: 50px">{{ object.Jobs }}</p>
+	<p style="font-size: 40px">{{ object.Time }}</p>
+  </div>
+</div>
+
+<!--
+<h2> {{ object.Jobs }} </h2>
+<h2> {{ object.Time }} </h2>
+-->
+<!--  <p><input type='submit' value= 'Delete'/><a href="object.id/delete/"></a></p> -->
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+<h2>Here are the list of things you should do</h2>
+<br>
+
+<div class="w3-bar-block w3-teal" style="width:60%">
+  {% for instance in object_list %}
+	<p style="font-size: 20px">{{ forloop.counter }}<a href = "{{ instance.get_absolute_url }}" class="w3-bar-item w3-hover-green">{{ instance.Todo }}</a></p>
+	{% endfor %}
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="w3-panel" style="width:30%">
+  <button class="w3-button w3-block w3-black"><a href="create/"> Add another job </a></button>
+</div>
+
+<!--
+{% for instance in object_list %}
+	<p>{{instance.id}} - <a href = "{{ instance.get_absolute_url }}">{{ instance.Todo }}</a></p>
+{% endfor %}
+-->
+{% endblock %}
